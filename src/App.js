@@ -46,22 +46,4 @@ function App() {
     );
 }
 
-const mainPageStyles = {
-    backgroundImage: 'url(/images/latte_art.jpg)',
-    backgroundSize: "cover",
-    height: "100vh"
-}
-
-const companyNameStyles = {
-    position: "absolute",
-    color: "#c4c2bb",
-    fontSize: "5rem",
-    top: 150,
-    right: 70,
-    fontFamily: 'Courgette',
-    textShadow: "3px 4px 2px black"
-}
-
-
-
 export default App;

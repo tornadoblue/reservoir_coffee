@@ -248,7 +248,12 @@ function Home(props) {
                                     <MapContainer>
                                         <iframe
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.7654930180843!2d-120.36024964866681!3d50.66861447940136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c5ec2eaa95d%3A0xc9b10305ce243b14!2sReservoir%20Coffee!5e0!3m2!1sen!2sca!4v1636344072150!5m2!1sen!2sca"
-                                            width="600" height="450" style={{border: "0"}} allowFullScreen="yes" loading="lazy"/>
+                                            width="600"
+                                            height="450"
+                                            style={{border: "0"}}
+                                            allowFullScreen="yes"
+                                            loading="lazy"
+                                            title={"map"}/>
                                     </MapContainer>
                                 </LeftLocationContainer>
                                 <RightLocationContainer>
@@ -285,7 +290,7 @@ function Home(props) {
 }
 
 const backgroundImage = {
-    backgroundImage: 'url(/public/images/wood3.jpg)',
+    backgroundImage: 'url(/images/wood3.jpg)',
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundColor: "rgba(0,0,0,0.7)",
