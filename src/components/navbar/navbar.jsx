@@ -1,38 +1,56 @@
 import React from 'react';
 import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu
+    Nav,
+    NavLink,
+    Bars,
+    NavMenu, LogoLink, NavLinkContainer,
 } from './navbarElements';
+import {Link} from "react-router-dom";
 
 function Navbar({toggle}) {
     return (
         <>
-            <Nav>
-                <NavLink to={"/"}>
+            <Nav style={backgroundImage}>
+                <LogoLink to={"/"}>
                     <h1>
                         Logo
                     </h1>
-                </NavLink>
+                </LogoLink>
                 <Bars onClick={toggle}/>
                 <NavMenu>
-                    <NavLink to={"/menu"} activeStyle>
-                        Menu
-                    </NavLink>
-                    <NavLink to={"/gallery"} activeStyle>
-                        Gallery
-                    </NavLink>
-                    <NavLink to={"/about"} activeStyle>
-                        About Us
-                    </NavLink>
-                    <NavLink to={"/location"} activeStyle>
-                        Location
-                    </NavLink>
+                    <NavLinkContainer>
+                        <NavLink to={"/menu"} activeStyle>
+                            Menu
+                        </NavLink>
+                    </NavLinkContainer>
+                    <NavLinkContainer>
+                        <NavLink to={"/gallery"} activeStyle>
+                            Gallery
+                        </NavLink>
+                    </NavLinkContainer>
+                    <NavLinkContainer>
+                        <NavLink to={"/about"} activeStyle>
+                            About Us
+                        </NavLink>
+                    </NavLinkContainer>
+                    <NavLinkContainer>
+                        <NavLink to={"/location"} activeStyle>
+                            Location
+                        </NavLink>
+                    </NavLinkContainer>
                 </NavMenu>
             </Nav>
         </>
     );
+}
+
+const backgroundImage = {
+    backgroundImage: 'url(/images/beans4.jpg)',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundColor: "rgba(0,0,0,0.50)",
+    backgroundBlendMode: "multiply",
 }
 
 export default Navbar;

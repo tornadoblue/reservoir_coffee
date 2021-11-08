@@ -9,6 +9,7 @@ import Location from './components/location/location';
 import About from './components/about/about';
 import Sidebar from './components/sidebar/sidebar';
 import {useState} from 'react';
+import ScrollToTop from "./helperFucntions/scrollToTop";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,9 +23,7 @@ function App() {
             <ThemeProvider>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <Navbar toggle={toggle}/>
-                {/*<h1 style={companyNameStyles}>*/}
-                {/*    Reservoir Coffee*/}
-                {/*</h1>*/}
+                <ScrollToTop/>
                 <Switch>
                     <Route exact path={"/"}>
                         <Home/>
