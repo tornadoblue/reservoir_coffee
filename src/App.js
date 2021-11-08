@@ -19,7 +19,7 @@ function App() {
     }
 
     return (
-        <BrowserRouter basename={"/reservoir_coffee"}>
+        <BrowserRouter>
             <ThemeProvider>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <Navbar toggle={toggle}/>
