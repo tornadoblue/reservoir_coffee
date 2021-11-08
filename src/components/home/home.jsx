@@ -285,7 +285,7 @@ function Home(props) {
 }
 
 const backgroundImage = {
-    backgroundImage: 'url(/images/wood3.jpg)',
+    backgroundImage: 'url(/public/images/wood3.jpg)',
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundColor: "rgba(0,0,0,0.7)",
