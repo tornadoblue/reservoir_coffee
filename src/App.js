@@ -19,7 +19,7 @@ function App() {
     }
 
     return (
-        <BrowserRouter basename={"/"}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <ThemeProvider>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <Navbar toggle={toggle}/>
