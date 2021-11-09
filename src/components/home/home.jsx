@@ -3,18 +3,18 @@ import {
     AboutBtn,
     BodyContainer,
     ImageContainer, ImageDescription,
-    ImageHome,
+    ImageHome, InnerDescriptionParagraph,
     Introduction,
     IntroductionDescription,
     IntroductionHeader, LeftLocationContainer, LocationContainer,
     LocationDescription, LocationHeader,
-    LocationSlogan, LocationWrapper, LowerElementContainer, LowerElementHeader,
+    LocationSlogan, LocationTitle, LocationWrapper, LowerElementContainer, LowerElementHeader,
     MainContainer,
     MapContainer,
     MenuBtn,
     MenuContainer,
     MenuHeader,
-    MenuItem, PhotoContainer, PhotosContainer, RightLocationContainer, SpacingContainer,
+    MenuItem, MenuTable, PhotoContainer, PhotosContainer, RightLocationContainer, SpacingContainer,
     TopContainer,
     TopElementContainer,
 } from './homeStyles';
@@ -41,22 +41,22 @@ function Home(props) {
                             </AboutBtn>
                         </Introduction>
                         <ImageContainer>
-                            <ImageHome src={"/images/espresso1.jpg"}/>
+                            <ImageHome src={process.env.PUBLIC_URL + "/images/espresso1.jpg"}/>
                         </ImageContainer>
                     </TopElementContainer>
                     <LowerElementContainer>
                         <LowerElementHeader>
-                            Eat, Drink, Laugh
+                            Eat, Drink, Relax
                         </LowerElementHeader>
                         <PhotosContainer>
                             <PhotoContainer>
-                                <ImageHome src={"/images/grilled_cheese.jpg"}/>
+                                <ImageHome src={process.env.PUBLIC_URL + "/images/grilled_cheese.jpg"}/>
                             </PhotoContainer>
                             <PhotoContainer>
-                                <ImageHome src={"/images/coffee_home.jpg"}/>
+                                <ImageHome src={process.env.PUBLIC_URL + "/images/coffee_home.jpg"}/>
                             </PhotoContainer>
                             <PhotoContainer>
-                                <ImageHome src={"/images/iced_tea.jpg"}/>
+                                <ImageHome src={process.env.PUBLIC_URL + "/images/iced_tea.jpg"}/>
                             </PhotoContainer>
                         </PhotosContainer>
                     </LowerElementContainer>
@@ -67,7 +67,7 @@ function Home(props) {
                     </MenuHeader>
                     <MenuContainer>
                         <MenuItem>
-                            <table style={tableStyles}>
+                            <MenuTable>
                                 <tr>
                                     <th style={tableHeaderStyles}>Coffee</th>
                                     <th style={tableHeaderStyles}>12 oz.</th>
@@ -93,10 +93,10 @@ function Home(props) {
                                     <td>4.75</td>
                                     <td>5.25</td>
                                 </tr>
-                            </table>
+                            </MenuTable>
                         </MenuItem>
                         <MenuItem>
-                            <table style={tableStyles}>
+                            <MenuTable>
                                 <tr>
                                     <th style={tableHeaderStyles}>Traditional</th>
                                     <th style={tableHeaderStyles}>12 oz.</th>
@@ -117,10 +117,10 @@ function Home(props) {
                                     <td>2.75</td>
                                     <td>-</td>
                                 </tr>
-                            </table>
+                            </MenuTable>
                         </MenuItem>
                         <MenuItem>
-                            <table style={tableStyles}>
+                            <MenuTable>
                                 <tr>
                                     <th style={tableHeaderStyles}>Not Coffee</th>
                                     <th style={tableHeaderStyles}>12 oz.</th>
@@ -161,10 +161,10 @@ function Home(props) {
                                     <td>3.25</td>
                                     <td>3.50</td>
                                 </tr>
-                            </table>
+                            </MenuTable>
                         </MenuItem>
                         <MenuItem>
-                            <table style={tableStyles}>
+                            <MenuTable>
                                 <tr>
                                     <th style={tableHeaderStyles}>Summer</th>
                                     <th style={tableHeaderStyles}>12 oz.</th>
@@ -235,7 +235,7 @@ function Home(props) {
                                 {/*    <td>3.75</td>*/}
                                 {/*    <td>4.25</td>*/}
                                 {/*</tr>*/}
-                            </table>
+                            </MenuTable>
                         </MenuItem>
                         <MenuBtn to={"/menu"}>
                             View Our Full Menu
@@ -244,6 +244,9 @@ function Home(props) {
                     <SpacingContainer>
                         <LocationWrapper>
                             <LocationContainer>
+                                <LocationTitle>
+                                    Come Visit Us And Enjoy A Cup Of Coffee
+                                </LocationTitle>
                                 <LeftLocationContainer>
                                     <MapContainer>
                                         <iframe
@@ -265,15 +268,10 @@ function Home(props) {
                                         is Reservoir Coffee. We can't wait to serve you the best coffee in Kamloops.
                                         Come study, enjoy your lunch break, or just catch up with an old friend with us
                                         here at Reservoir Coffee.
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        No detail overlooked, it all matters.
                                     </LocationDescription>
+                                    <InnerDescriptionParagraph>
+                                            No detail overlooked, it all matters.
+                                    </InnerDescriptionParagraph>
                                     <LocationSlogan>
                                         <span style={{color: "#F9F7F3"}}>Location</span>,
                                         <span style={{color: "#E8AA14"}}> Atmosphere</span>,
@@ -290,7 +288,7 @@ function Home(props) {
 }
 
 const backgroundImage = {
-    backgroundImage: 'url(/images/wood3.jpg)',
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/wood3.jpg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundColor: "rgba(0,0,0,0.7)",

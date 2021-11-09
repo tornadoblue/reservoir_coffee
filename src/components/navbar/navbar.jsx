@@ -45,7 +45,7 @@ function Navbar({toggle}) {
 }
 
 const backgroundImage = {
-    backgroundImage: 'url(/images/beans4.jpg)',
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/beans4.jpg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
