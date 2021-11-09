@@ -313,6 +313,9 @@ export const LocationHeader = styled.div`
     border-bottom: 3px solid #0FA3B1;
     font-family: 'Montserrat', sans-serif;
     
+    @media screen and (max-width: 1450px) {
+        font-size: 1.5rem;
+    }
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
     }
