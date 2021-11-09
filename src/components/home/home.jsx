@@ -245,7 +245,7 @@ function Home(props) {
                         <LocationWrapper>
                             <LocationContainer>
                                 <LocationTitle>
-                                    Come Visit Us And Enjoy A Cup Of Coffee
+                                    Come Visit Us
                                 </LocationTitle>
                                 <LeftLocationContainer>
                                     <MapContainer>

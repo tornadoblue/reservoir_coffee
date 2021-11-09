@@ -75,6 +75,10 @@ export const MenuContainer = styled.div`
     @media screen and (max-width: 900px) {
         align-content: center;
     }
+    @media screen and (max-width: 575px) {
+        align-content: center;
+        width: 95%;
+    }
 `
 
 export const MenuItem = styled.div`
@@ -101,7 +105,7 @@ export const MenuTable = styled.table`
         text-align: center;
     }
     @media screen and (max-width: 594px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: center;
     }
 `
@@ -152,6 +156,10 @@ export const LowerElementHeader = styled.div`
     }
     @media screen and (max-width: 900px) {
         font-size: 1.5rem;
+    }
+    @media screen and (max-width: 575px) {
+        font-size: 1.2rem;
+        width: 60%;
     }
 `
 
@@ -238,6 +246,7 @@ export const IntroductionDescription = styled.div`
     @media screen and (max-width: 900px) {
         padding-top: 20px;
         padding-right: 0;
+        text-align: center;
         margin: auto;
     }
 `
@@ -280,8 +289,8 @@ export const ImageHome = styled.img`
 
 export const LocationTitle = styled.div`
     display: none;
-    font-size: 1.1rem;
-    width: 90%;
+    font-size: 2rem;
+    width: 95%;
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
@@ -290,6 +299,10 @@ export const LocationTitle = styled.div`
     
     @media screen and (max-width: 900px) {
         display: inline;
+    }
+    @media screen and (max-width: 575px) {
+        display: inline;
+        font-size: 1.2rem;
     }
 `
 
@@ -331,8 +344,8 @@ export const LocationHeader = styled.div`
         text-align: center;
         margin: auto;
         height: 100%;
-        width: 90%;
-        font-size: 1.1rem;
+        width: 95%;
+        font-size: 1rem;
     }
 `
 
