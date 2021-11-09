@@ -237,6 +237,7 @@ export const IntroductionDescription = styled.div`
     
     @media screen and (max-width: 900px) {
         padding-top: 20px;
+        padding-right: 0;
         margin: auto;
     }
 `
