@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {Col, Row} from "react-bootstrap";
 
 export const MainContainer = styled.div`
     position: relative;
@@ -53,42 +54,44 @@ export const BodyContainer = styled.div`
 
 export const MenuHeader = styled.div`
     text-align: center;
-    color: #FFFFEA;
+    color: #fff;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 4px 4px 7px black;
 `
 
 export const MenuContainer = styled.div`
-    display: flex;
-    flex-flow: wrap;
+    position: relative;
     margin: auto;
     color: #fff;
     width: 80%;
-    height: 100%;
+    height: 10%;
     padding: 20px;
-    align-content: flex-start;
     border-radius: 5px;
     background-color:rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
-    @media screen and (max-width: 900px) {
-        align-content: center;
-    }
-    @media screen and (max-width: 575px) {
-        align-content: center;
+    @media screen and (max-width: 594px) {
         width: 95%;
     }
 `
 
-export const MenuItem = styled.div`
+export const MenuCol = styled(Row)`
     width: 50%;
-    padding-bottom: 30px;
-    text-align: center;
+    margin: 0 auto;
+    height: 100%;
     
     @media screen and (max-width: 900px) {
         width: 100%;
     }
+    
+`
+
+export const MenuItem = styled.div`
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
 `
 
 export const MenuTable = styled.table`
@@ -149,7 +152,7 @@ export const LowerElementHeader = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     padding-bottom: 3px;
-    border-bottom: 3px solid #0FA3B1;
+    border-bottom: 3px solid #2dccd3;
     
     @media screen and (max-width: 1200px) {
         font-size: 2rem;
@@ -218,7 +221,7 @@ export const ImageContainer = styled.div`
 
 export const IntroductionHeader = styled.div`
     width: 90%;
-    border-bottom: 3px solid #0FA3B1;
+    border-bottom: 3px solid #2dccd3;
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     padding-right: 25px;
@@ -295,7 +298,7 @@ export const LocationTitle = styled.div`
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    border-bottom: 3px solid #0FA3B1;
+    border-bottom: 3px solid #2dccd3;
     
     @media screen and (max-width: 900px) {
         display: inline;
@@ -324,7 +327,7 @@ export const LocationHeader = styled.div`
     font-size: 2rem;
     width: 100%;
     padding-top: 10px;
-    border-bottom: 3px solid #0FA3B1;
+    border-bottom: 3px solid #2dccd3;
     font-family: 'Montserrat', sans-serif;
     
     @media screen and (max-width: 1450px) {

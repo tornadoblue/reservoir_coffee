@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   position: sticky;
-  background: #212529;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -33,7 +32,7 @@ export const NavLink = styled(Link)`
   }
   &.active {
     color: #E8AA14;
-    border-bottom: 2px solid #0FA3B1;
+    border-bottom: 2px solid #2dccd3;
     text-decoration: none;
     margin-bottom: 5px;
   }
@@ -51,7 +50,7 @@ export const Bars = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 75%);
+    transform: translate(-100%, 80%);
     font-size: 1.8rem;
     cursor: pointer;
   }

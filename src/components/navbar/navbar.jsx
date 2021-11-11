@@ -12,9 +12,7 @@ function Navbar({toggle}) {
         <>
             <Nav style={backgroundImage}>
                 <LogoLink to={"/"}>
-                    <h1>
-                        Logo
-                    </h1>
+                    <img  style={{height: "100%"}} src={process.env.PUBLIC_URL + "/images/Reservoir_Teal.png"}/>
                 </LogoLink>
                 <Bars onClick={toggle}/>
                 <NavMenu>
