@@ -25,7 +25,7 @@ export const NavLink = styled(Link)`
   color: #fff;
   
   &:hover {
-    border-bottom: 2px solid #0FA3B1;
+    border-bottom: 2px solid #2dccd3;
     text-decoration: none;
     margin-bottom: 5px;
     color: #fff;
@@ -70,12 +70,8 @@ export const LogoLink = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    font-size: 1.1rem;
+    padding: 0;
     height: 100%;
     cursor: pointer;
-    color: #fff;
-    &:hover {
-        text-decoration: none;
-        color: #E8AA14;
-    }
 `

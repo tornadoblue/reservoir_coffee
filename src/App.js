@@ -10,6 +10,7 @@ import About from './components/about/about';
 import Sidebar from './components/sidebar/sidebar';
 import {useState} from 'react';
 import ScrollToTop from "./helperFucntions/scrollToTop";
+import Footer from "./components/footer/footer";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false)
@@ -41,6 +42,7 @@ function App() {
                         <About/>
                     </Route>
                 </Switch>
+                <Footer/>
             </ThemeProvider>
         </BrowserRouter>
     );

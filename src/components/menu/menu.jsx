@@ -8,13 +8,13 @@ import {
     MenuTable,
 } from "../home/homeStyles";
 import {Row} from "react-bootstrap";
-import {LatteImg, MenuInnerHeader} from "./menuStyles";
+import {LatteImg, MenuBodyContainer, MenuInnerHeader} from "./menuStyles";
 
 function Menu(props) {
     return (
         <>
             <MainContainer style={backgroundImage}>
-                <BodyContainer>
+                <MenuBodyContainer>
                     <MenuHeader>
                         Menu
                     </MenuHeader>
@@ -96,8 +96,44 @@ function Menu(props) {
                                             <td>3.50</td>
                                         </tr>
                                     </MenuTable>
+                                </MenuItem><MenuItem>
+                                    <MenuTable>
+                                        <tr>
+                                            <th style={tableHeaderStyles}>Extras</th>
+                                            <th style={tableHeaderStyles}/>
+                                            <th style={tableHeaderStyles}/>
+                                        </tr>
+                                        <tr>
+                                            <td>Almond Milk</td>
+                                            <td>-</td>
+                                            <td>1.00</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Soy Milk</td>
+                                            <td>-</td>
+                                            <td>1.00</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Coconut Milk</td>
+                                            <td>-</td>
+                                            <td>1.00</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Flavours</td>
+                                            <td>-</td>
+                                            <td>1.00</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Extra Shot</td>
+                                            <td>-</td>
+                                            <td>1.00</td>
+                                        </tr>
+                                    </MenuTable>
                                 </MenuItem>
-                                <LatteImg src={process.env.PUBLIC_URL + "/images/latte.png"}/>
                             </MenuCol>
                             <MenuCol>
                                 <MenuItem>
@@ -203,8 +239,90 @@ function Menu(props) {
                         <MenuInnerHeader>
                             Food
                         </MenuInnerHeader>
+                        <Row className={"mt-4 ml-0 mr-0"}>
+                            <MenuCol>
+                                <MenuItem>
+                                    <MenuTable>
+                                        <tr>
+                                            <th style={tableHeaderStyles}>Breakfast</th>
+                                            <th style={tableHeaderStyles}/>
+                                        </tr>
+                                        <tr>
+                                            <td>Reservoir Egger</td>
+                                            <td>5.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sausage Egger</td>
+                                            <td>5.95</td>
+                                        </tr>
+                                    </MenuTable>
+                                </MenuItem>
+                                <MenuItem>
+                                    <MenuTable>
+                                        <tr>
+                                            <th style={tableHeaderStyles}>wraps</th>
+                                            <th style={tableHeaderStyles}/>
+                                        </tr>
+                                        <tr>
+                                            <td>Vegan</td>
+                                            <td>3.75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Southwest</td>
+                                            <td>3.25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thai Chicken</td>
+                                            <td>2.75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Butter Chicken</td>
+                                            <td>2.75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Teriyaki Chicken</td>
+                                            <td>2.75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carnivore</td>
+                                            <td>2.75</td>
+                                        </tr>
+                                    </MenuTable>
+                                </MenuItem>
+                            </MenuCol>
+                            <MenuCol>
+                                <MenuItem>
+                                    <MenuTable>
+                                        <tr>
+                                            <th style={tableHeaderStyles}>Snacks</th>
+                                            <th style={tableHeaderStyles}/>
+                                        </tr>
+                                        <tr>
+                                            <td>Croissant</td>
+                                            <td>3.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Milk Chocolate Croissant</td>
+                                            <td>3.85</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dark Chocolate Croissant</td>
+                                            <td>3.85</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hot Pretzel</td>
+                                            <td>2.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Macaroons</td>
+                                            <td>2.00</td>
+                                        </tr>
+                                    </MenuTable>
+                                </MenuItem>
+                            </MenuCol>
+                        </Row>
                     </MenuContainer>
-                </BodyContainer>
+                </MenuBodyContainer>
             </MainContainer>
         </>
     );

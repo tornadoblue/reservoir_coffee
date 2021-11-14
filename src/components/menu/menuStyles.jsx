@@ -24,10 +24,21 @@ export const MenuInnerHeader = styled.div`
 `
 
 export const LatteImg = styled.img`
-    width: 30%;
+    // position: relative;
+    // bottom: 0;
+    // left: 0;
+    width: 20%;
+    overflow: hidden;
+    float: left;
+    // border: 2px solid blue;
     margin: auto;
     
-     @media screen and (max-width: 900px) {
-        display: none;
-    }
+`
+
+export const MenuBodyContainer = styled.div`
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
 `

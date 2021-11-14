@@ -8,18 +8,23 @@ import {
     TopContainer,
     TopElementContainer
 } from "../home/homeStyles";
-import {IntroductionDescriptionAbout} from "./aboutStyles";
+import {
+    AboutImageContainer, AboutIntroduction, AboutIntroductionHeader,
+    IntroductionDescriptionAbout,
+    TopAboutContainer,
+    TopAboutElementContainer
+} from "./aboutStyles";
 
 function About(props) {
     return (
         <>
             <MainContainer style={backgroundImage}>
-                <TopContainer>
-                    <TopElementContainer>
-                        <Introduction>
-                            <IntroductionHeader>
+                <TopAboutContainer>
+                    <TopAboutElementContainer>
+                        <AboutIntroduction>
+                            <AboutIntroductionHeader>
                                 Our Story
-                            </IntroductionHeader>
+                            </AboutIntroductionHeader>
                             <IntroductionDescriptionAbout>
                                 Reservoir Coffee has been built with the collaborated efforts of Kristine Brynjolfson
                                 and Paul Berry. Kristine has a strong passion for coffee and had always dreamed of
@@ -31,12 +36,12 @@ function About(props) {
                                 which first opened in December of 2015.  We have experienced many coffee shops around
                                 the world and saw an opportunity to bring something a little different to Kamloops.
                             </IntroductionDescriptionAbout>
-                        </Introduction>
-                        <ImageContainer>
+                        </AboutIntroduction>
+                        <AboutImageContainer>
                             <ImageHome src={process.env.PUBLIC_URL + "/images/coffee2.jpg"}/>
-                        </ImageContainer>
-                    </TopElementContainer>
-                </TopContainer>
+                        </AboutImageContainer>
+                    </TopAboutElementContainer>
+                </TopAboutContainer>
             </MainContainer>
         </>
     );

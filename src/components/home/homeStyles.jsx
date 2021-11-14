@@ -29,20 +29,10 @@ export const MenuBtn = styled(Link)`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
     &:hover {
-        background-color: #0FA3B1;
-        color: #fff;
+        background-color: #2dccd3;
+        color: #000;
         text-decoration: none;
     }
-    
-    // @media screen and (max-width: 2300px) {
-    //     top: 350px;
-    // }
-    // @media screen and (max-width: 2100px) {
-    //     top: 300px;
-    // }
-    // @media screen and (max-width: 1850px) {
-    //     top: 250px;
-    // }
 `
 
 export const BodyContainer = styled.div`
@@ -68,7 +58,7 @@ export const MenuContainer = styled.div`
     height: 10%;
     padding: 20px;
     border-radius: 5px;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
     @media screen and (max-width: 594px) {
@@ -273,8 +263,8 @@ export const AboutBtn = styled(Link)`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
     &:hover {
-        background-color: #0FA3B1;
-        color: #fff;
+        background-color: #2dccd3;
+        color: #000;
         text-decoration: none;
     }
     
@@ -325,6 +315,7 @@ export const LocationContainer = styled.div`
 
 export const LocationHeader = styled.div`
     font-size: 2rem;
+    color: #fff;
     width: 100%;
     padding-top: 10px;
     border-bottom: 3px solid #2dccd3;
@@ -354,6 +345,7 @@ export const LocationHeader = styled.div`
 
 export const LocationDescription = styled.div`
     width: 100%;
+    color: #fff;
     position: absolute;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -374,6 +366,7 @@ export const LocationSlogan = styled.div`
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     bottom: 0;
+    color: #fff;
     padding-bottom: 20px;
     font-size: 2rem;
     
@@ -440,6 +433,7 @@ export const RightLocationContainer = styled.div`
 export const InnerDescriptionParagraph = styled.p`
     position: absolute;
     bottom: 15%;
+    color: #fff;
     font-size: 1.3rem;
     
     @media screen and (max-width: 1200px) {
