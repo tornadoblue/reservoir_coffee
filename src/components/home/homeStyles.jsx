@@ -406,7 +406,7 @@ export const LeftLocationContainer = styled.div`
     left: 0;
     bottom: 0;
     height: 100%;
-    border: 2px solid white;
+    // border: 2px solid white;
     
     @media screen and (max-width: 900px) {
         width: 100%;
