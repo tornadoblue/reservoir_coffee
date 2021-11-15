@@ -1,5 +1,5 @@
 import React from 'react';
-import {LatteImg} from "../menu/menuStyles";
+import {LogoImg} from "../menu/menuStyles";
 import {
     FooterContainer, FooterHoursTable,
     FooterIcon,
@@ -82,7 +82,7 @@ function Footer(props) {
                                 <td>9:00 AM - 4:00 PM</td>
                             </tr>
                         </FooterHoursTable>
-                        <LatteImg src={process.env.PUBLIC_URL + "/images/Reservoir_Teal.png"}/>
+                        <LogoImg src={process.env.PUBLIC_URL + "/images/Reservoir_Teal.png"}/>
                     </HoursContainer>
                 </FooterInnerContainer>
             </FooterContainer>

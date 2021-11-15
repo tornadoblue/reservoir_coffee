@@ -8,7 +8,7 @@ import {
     MenuTable,
 } from "../home/homeStyles";
 import {Row} from "react-bootstrap";
-import {LatteImg, MenuBodyContainer, MenuInnerHeader} from "./menuStyles";
+import {LogoImg, MenuBodyContainer, MenuInnerHeader} from "./menuStyles";
 
 function Menu(props) {
     return (

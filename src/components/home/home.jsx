@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     AboutBtn,
-    BodyContainer,
+    BodyContainer, GalleryBtn,
     ImageContainer,
     ImageHome, InnerDescriptionParagraph,
     Introduction,
@@ -60,6 +60,9 @@ function Home(props) {
                                 <ImageHome src={process.env.PUBLIC_URL + "/images/iced_tea.jpg"}/>
                             </PhotoContainer>
                         </PhotosContainer>
+                        <GalleryBtn to={"/gallery"}>
+                            View Our Gallery
+                        </GalleryBtn>
                     </LowerElementContainer>
                 </TopContainer>
                 <BodyContainer>

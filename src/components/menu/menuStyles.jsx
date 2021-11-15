@@ -23,16 +23,20 @@ export const MenuInnerHeader = styled.div`
     border-bottom: 3px solid #E8AA14;
 `
 
-export const LatteImg = styled.img`
+export const LogoImg = styled.img`
     position: relative;
     // bottom: 0;
     // left: 0;
     display: block;
     margin: auto;
-    width: 40%;
+    width: 50%;
     justify-content: center;
     // border: 2px solid blue;
     margin: auto;
+    
+    @media screen and (max-width: 900px) {
+        width: 50%;
+    }
     
 `
 

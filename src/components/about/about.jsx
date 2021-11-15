@@ -1,15 +1,9 @@
 import React from 'react';
 import {
-    ImageContainer,
     ImageHome,
-    Introduction,
-    IntroductionHeader,
-    MainContainer,
-    TopContainer,
-    TopElementContainer
 } from "../home/homeStyles";
 import {
-    AboutImageContainer, AboutIntroduction, AboutIntroductionHeader, BottomAboutElementContainer,
+    AboutImageContainer, AboutIntroduction, AboutIntroductionHeader,
     IntroductionDescriptionAbout, MainAboutContainer,
     TopAboutContainer,
     TopAboutElementContainer
@@ -38,7 +32,7 @@ function About(props) {
                             </IntroductionDescriptionAbout>
                         </AboutIntroduction>
                         <AboutImageContainer>
-                            <ImageHome src={process.env.PUBLIC_URL + "/images/coffee2.jpg"}/>
+                            <ImageHome src={process.env.PUBLIC_URL + "/images/test3.jpg"}/>
                         </AboutImageContainer>
                     </TopAboutElementContainer>
                 </TopAboutContainer>

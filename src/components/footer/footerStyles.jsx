@@ -34,13 +34,17 @@ export const LinkHeader = styled.h1`
     font-size: 2rem;
     text-align: center;
     margin: 5% auto;
-    width: 80%;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     // border: 2px solid red;
     // border-bottom: 2px solid #E8AA14;
     
     @media screen and (max-width: 1100px) {
         font-size: 1.5rem;
+    }
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        border-bottom: 2px solid #E8AA14;
     }
 `
 

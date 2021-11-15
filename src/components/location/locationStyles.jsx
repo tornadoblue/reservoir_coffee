@@ -79,4 +79,10 @@ export const LocationInformation = styled.div`
     margin: 50px auto;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    
+    @media screen and (max-width: 900px) {
+        width: 95%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 `

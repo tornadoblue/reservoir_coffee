@@ -60,7 +60,7 @@ export const MenuContainer = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
-    @media screen and (max-width: 594px) {
+    @media screen and (max-width: 900px) {
         width: 95%;
     }
 `
@@ -122,6 +122,7 @@ export const TopElementContainer = styled.div`
         display: flex;
         flex-flow: wrap;
         height: 100%;
+        width: 95%;
     }
 `
 
@@ -131,6 +132,10 @@ export const LowerElementContainer = styled.div`
     height: 100%;
     margin: auto;
     padding-top: 5%;
+    
+    @media screen and (max-width: 900px) {
+        width: 95%;
+    }
 `
 
 export const LowerElementHeader = styled.div`
@@ -173,6 +178,11 @@ export const PhotoContainer = styled.div`
     display: flex;
     overflow: hidden;
     margin: auto;
+    
+    @media screen and (max-width: 900px) {
+        width: 30vw;
+        height: 30vw;
+    }
 `
 
 export const Introduction = styled.div`
@@ -201,8 +211,8 @@ export const ImageContainer = styled.div`
     overflow: hidden;
     
     @media screen and (max-width: 900px) {
-        width: 80%;
-        height: 40vw;
+        width: 100%;
+        height: 60vw;
         position: relative;
         margin: auto;
     }
@@ -308,6 +318,7 @@ export const LocationContainer = styled.div`
     @media screen and (max-width: 900px) {
         display: flex;
         flex-flow: wrap;
+        width: 95%;
         height: 100%;
     }
 `
@@ -332,6 +343,7 @@ export const LocationHeader = styled.div`
         height: 100%;
         width: 90%;
         font-size: 1.3rem;
+        padding-top: 50px;
     }
     @media screen and (max-width: 585px) {
         text-align: center;
@@ -354,6 +366,7 @@ export const LocationDescription = styled.div`
     @media screen and (max-width: 900px) {
         position: relative;
         height: 100%;
+        padding-top: 20px;
         padding-right: 0;
         font-size: 1rem;
         text-align: center;
@@ -445,4 +458,31 @@ export const InnerDescriptionParagraph = styled.p`
         text-align: center;
         position: relative;
     }
+`
+
+export const GalleryBtn = styled(Link)`
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.65em 1.6em;
+    border: 1px solid #fff;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    &:hover {
+        background-color: #2dccd3;
+        color: #000;
+        text-decoration: none;
+    }
+    
 `

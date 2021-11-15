@@ -33,6 +33,10 @@ export const TopAboutContainer = styled.div`
     margin: auto;
     // border: 2px solid red;
     background-color: rgba(0, 0, 0, 0.5);
+    
+    @media screen and (max-width: 900px) {
+        width: 95%;
+    }
 `
 
 export const TopAboutElementContainer = styled.div`
@@ -44,6 +48,10 @@ export const TopAboutElementContainer = styled.div`
     display: flex;
     flex-flow: wrap;
     height: 100%;
+    
+    @media screen and (max-width: 900px) {
+        padding: 20px;
+    }
 `
 
 export const AboutIntroduction = styled.div`
@@ -61,7 +69,7 @@ export const AboutImageContainer = styled.div`
     overflow: hidden;
     // padding: 30px;
     // width: 80%;
-    height: 40vw;
+    height: 50vw;
     position: relative;
     margin: auto;
     padding: 0;
