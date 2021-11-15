@@ -9,8 +9,8 @@ import {
     TopElementContainer
 } from "../home/homeStyles";
 import {
-    AboutImageContainer, AboutIntroduction, AboutIntroductionHeader,
-    IntroductionDescriptionAbout,
+    AboutImageContainer, AboutIntroduction, AboutIntroductionHeader, BottomAboutElementContainer,
+    IntroductionDescriptionAbout, MainAboutContainer,
     TopAboutContainer,
     TopAboutElementContainer
 } from "./aboutStyles";
@@ -18,7 +18,7 @@ import {
 function About(props) {
     return (
         <>
-            <MainContainer style={backgroundImage}>
+            <MainAboutContainer style={backgroundImage}>
                 <TopAboutContainer>
                     <TopAboutElementContainer>
                         <AboutIntroduction>
@@ -42,7 +42,7 @@ function About(props) {
                         </AboutImageContainer>
                     </TopAboutElementContainer>
                 </TopAboutContainer>
-            </MainContainer>
+            </MainAboutContainer>
         </>
     );
 }

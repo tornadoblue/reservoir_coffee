@@ -13,13 +13,18 @@ export const FooterInnerContainer = styled.div`
     width: 80%;
     height: 100%;
     margin: auto;
+    padding-bottom: 3%;
     // border: 2px solid blue;
     overflow: hidden;
+    
+    @media screen and (max-width: 800px) {
+        flex-wrap: wrap;
+    }
 `
 
 export const LinkContainer = styled.div`
     // border: 2px solid white;
-    width: 50%;
+    width: 100%;
     float: left;
     height: 100%;
 `
@@ -29,15 +34,19 @@ export const LinkHeader = styled.h1`
     font-size: 2rem;
     text-align: center;
     margin: 5% auto;
-    width: 60%;
+    width: 80%;
     font-family: 'Montserrat', sans-serif;
     // border: 2px solid red;
     // border-bottom: 2px solid #E8AA14;
+    
+    @media screen and (max-width: 1100px) {
+        font-size: 1.5rem;
+    }
 `
 
 export const HoursContainer = styled.div`
     // border: 2px solid yellow;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
     height: 100%;
 `
@@ -57,14 +66,14 @@ export const IconDescription = styled.div`
 export const FooterItemRow = styled.div`
     width: 100%;
     margin: 0 auto;
-    display flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     // border: 2px solid cyan;
 `
 
 export const FooterHoursTable = styled.table`
-    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     margin: 5% auto;
     font-size: 1.1rem;
@@ -77,8 +86,9 @@ export const FooterHoursTable = styled.table`
 export const FooterItem = styled.a`
     display: flex;
     align-items: center;
-    width: 50%;
-    justify-content: start;
+    width: 100%;
+    padding-bottom: 8px;
+    justify-content: center;
     text-decoration: none;
     // border: 2px solid red;
     

@@ -50,7 +50,7 @@ function Footer(props) {
                     </LinkContainer>
                     <HoursContainer>
                         <LinkHeader>
-                            Hours Of Operation
+                            Business Hours
                         </LinkHeader>
                         <FooterHoursTable>
                             <tr>
@@ -82,6 +82,7 @@ function Footer(props) {
                                 <td>9:00 AM - 4:00 PM</td>
                             </tr>
                         </FooterHoursTable>
+                        <LatteImg src={process.env.PUBLIC_URL + "/images/Reservoir_Teal.png"}/>
                     </HoursContainer>
                 </FooterInnerContainer>
             </FooterContainer>

@@ -14,6 +14,10 @@ export const LocationHeaderContainer = styled.div`
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 3px solid #2dccd3;
+    
+    @media screen and (max-width: 900px) {
+        font-size: 2rem;
+    }
 `
 
 export const HoursTable = styled.table`
@@ -23,10 +27,18 @@ export const HoursTable = styled.table`
     width: 100%;
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
-    // border: 2px solid red;
+    // border: 2px solid orange;
     text-align: center;
     color: #fff;
+    
+    @media screen and (max-width: 900px) {
+        position: relative;
+        transform: none;
+        margin: 8% auto;
+        font-size: 1rem;
+    }
 `
 
 export const HoursHeader = styled.h1`
@@ -36,7 +48,13 @@ export const HoursHeader = styled.h1`
     position: absolute;
     top: 20px;
     text-align: center;
+    left: 0;
+    // border: 2px solid blue;
     font-family: 'Montserrat', sans-serif;
+    
+    @media screen and (max-width: 900px) {
+        position: relative;
+    }
 `
 
 export const OpenOrClosed = styled.div`
@@ -45,8 +63,14 @@ export const OpenOrClosed = styled.div`
     width: 100%;
     position: absolute;
     bottom: 20px;
+    left: 0;
     text-align: center;
+    // border: 2px solid pink;
     font-family: 'Montserrat', sans-serif;
+    
+    @media screen and (max-width: 900px) {
+        position: relative;
+    }
 `
 
 export const LocationInformation = styled.div`

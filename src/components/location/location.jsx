@@ -77,7 +77,7 @@ function Location(props) {
                     </LeftLocationContainer>
                     <RightLocationContainer>
                         <HoursHeader>
-                            Hours Of Operation
+                            Business Hours
                         </HoursHeader>
                         <HoursTable>
                             <tr>
@@ -110,7 +110,7 @@ function Location(props) {
                             </tr>
                         </HoursTable>
                         <OpenOrClosed>
-                            We are <span style={{color: openClosed === "open" ? "green" : "red"}}>{openClosed}</span>
+                            We are <span style={{color: openClosed === "open" ? "green" : "red"}}>{openClosed}</span> now
                         </OpenOrClosed>
                     </RightLocationContainer>
                 </LocationContainer>

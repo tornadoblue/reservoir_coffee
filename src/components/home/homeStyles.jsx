@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {Col, Row} from "react-bootstrap";
+import {Row} from "react-bootstrap";
 
 export const MainContainer = styled.div`
     position: relative;
     color: #f2e9e4;
     width: 100%;
     height: 100%;
-    margin: auto;  
 `
 
 export const MenuBtn = styled(Link)`
@@ -407,11 +406,12 @@ export const LeftLocationContainer = styled.div`
     left: 0;
     bottom: 0;
     height: 100%;
+    border: 2px solid white;
     
     @media screen and (max-width: 900px) {
         width: 100%;
         position: relative;
-        align-content: center;
+        align-items: center;
     }
 `
 
@@ -422,6 +422,7 @@ export const RightLocationContainer = styled.div`
     right: 0;
     bottom: 0;
     height: 100%;
+    // border: 2px solid red;
     
     @media screen and (max-width: 900px) {
         width: 100%;

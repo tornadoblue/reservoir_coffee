@@ -24,12 +24,13 @@ export const MenuInnerHeader = styled.div`
 `
 
 export const LatteImg = styled.img`
-    // position: relative;
+    position: relative;
     // bottom: 0;
     // left: 0;
-    width: 20%;
-    overflow: hidden;
-    float: left;
+    display: block;
+    margin: auto;
+    width: 40%;
+    justify-content: center;
     // border: 2px solid blue;
     margin: auto;
     
