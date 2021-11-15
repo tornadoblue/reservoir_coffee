@@ -110,7 +110,7 @@ function Location(props) {
                             </tr>
                         </HoursTable>
                         <OpenOrClosed>
-                            We are <span style={{color: openClosed === "open" ? "green" : "red"}}>{openClosed}</span> now
+                            We are <span style={{color: openClosed === "open" ? "#a1ff0a" : "#ff0000"}}>{openClosed}</span> now
                         </OpenOrClosed>
                     </RightLocationContainer>
                 </LocationContainer>
