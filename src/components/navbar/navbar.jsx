@@ -5,7 +5,6 @@ import {
     Bars,
     NavMenu, LogoLink, NavLinkContainer,
 } from './navbarElements';
-import {Link} from "react-router-dom";
 
 function Navbar({toggle}) {
     return (

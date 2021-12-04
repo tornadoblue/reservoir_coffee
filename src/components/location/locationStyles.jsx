@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const TopLocationContainer = styled.div`
     position: relative;
-    // border: 2px solid white;
 `
 
 export const LocationHeaderContainer = styled.div`
@@ -29,7 +28,6 @@ export const HoursTable = styled.table`
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    // border: 2px solid orange;
     text-align: center;
     color: #fff;
     
@@ -49,7 +47,6 @@ export const HoursHeader = styled.h1`
     top: 20px;
     text-align: center;
     left: 0;
-    // border: 2px solid blue;
     font-family: 'Montserrat', sans-serif;
     
     @media screen and (max-width: 900px) {
@@ -65,7 +62,6 @@ export const OpenOrClosed = styled.div`
     bottom: 20px;
     left: 0;
     text-align: center;
-    // border: 2px solid pink;
     font-family: 'Montserrat', sans-serif;
     
     @media screen and (max-width: 900px) {

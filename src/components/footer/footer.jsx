@@ -8,8 +8,6 @@ import {
     LinkContainer,
     LinkHeader
 } from "./footerStyles";
-import {HoursHeader, HoursTable} from "../location/locationStyles";
-import {Row} from "react-bootstrap";
 
 function Footer(props) {
     return (
@@ -19,10 +17,10 @@ function Footer(props) {
                     <LinkContainer>
                         <LinkHeader>Contact Us</LinkHeader>
                         <FooterItemRow>
-                            <FooterItem href={"tel: 12504345980"}>
+                            <FooterItem href={"tel: 12503122069"}>
                                 <FooterIcon src={process.env.PUBLIC_URL + "/images/phone.png"} style={{filter: "invert(1)"}}/>
                                 <IconDescription>
-                                    250-434-5980
+                                    250-312-2069
                                 </IconDescription>
                             </FooterItem>
                             <FooterItem href={"mailto: reservoircoffee@gmail.com"}>

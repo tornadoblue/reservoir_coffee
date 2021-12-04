@@ -32,7 +32,7 @@ function About(props) {
                             </IntroductionDescriptionAbout>
                         </AboutIntroduction>
                         <AboutImageContainer>
-                            <ImageHome src={process.env.PUBLIC_URL + "/images/test3.jpg"}/>
+                            <ImageHome src={process.env.PUBLIC_URL + "/images/coffee_shop46.png"}/>
                         </AboutImageContainer>
                     </TopAboutElementContainer>
                 </TopAboutContainer>

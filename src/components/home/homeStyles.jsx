@@ -25,6 +25,7 @@ export const MenuBtn = styled(Link)`
     text-align: center;
     transition: all 0.2s;
     cursor: pointer;
+    margin-top: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
     &:hover {
@@ -65,41 +66,11 @@ export const MenuContainer = styled.div`
     }
 `
 
-export const MenuCol = styled(Row)`
-    width: 50%;
-    margin: 0 auto;
-    height: 100%;
-    
-    @media screen and (max-width: 900px) {
-        width: 100%;
-    }
-    
-`
-
 export const MenuItem = styled.div`
-    display: block;
-    width: 100%;
-    padding-bottom: 30px;
-    text-align: center;
-`
-
-export const MenuTable = styled.table`
-    width: 100%;
-    font-size: 1.3rem;
-    table-layout: fixed;
-    font-family: "Staatliches";
-    
-    @media screen and (max-width: 1200px) {
-        font-size: 1rem;
-    }
-    @media screen and (max-width: 900px) {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-    @media screen and (max-width: 594px) {
-        font-size: 1rem;
-        text-align: center;
-    }
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
 `
 
 export const TopContainer = styled.div`
@@ -419,7 +390,6 @@ export const LeftLocationContainer = styled.div`
     left: 0;
     bottom: 0;
     height: 100%;
-    // border: 2px solid white;
     
     @media screen and (max-width: 900px) {
         width: 100%;
@@ -435,7 +405,6 @@ export const RightLocationContainer = styled.div`
     right: 0;
     bottom: 0;
     height: 100%;
-    // border: 2px solid red;
     
     @media screen and (max-width: 900px) {
         width: 100%;

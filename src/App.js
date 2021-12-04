@@ -1,9 +1,10 @@
+import React from "react";
 import './App.css';
 import {ThemeProvider} from 'react-bootstrap';
 import Home from './components/home/home';
 import Navbar from './components/navbar/navbar';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Gallery from './components/gallery/gallery';
+import GalleryPage from './components/gallery/gallery';
 import Menu from './components/menu/menu';
 import Location from './components/location/location';
 import About from './components/about/about';
@@ -30,7 +31,7 @@ function App() {
                         <Home/>
                     </Route>
                     <Route exact path={"/gallery"}>
-                        <Gallery/>
+                        <GalleryPage/>
                     </Route>
                     <Route exact path={"/menu"}>
                         <Menu/>

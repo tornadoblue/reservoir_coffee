@@ -31,7 +31,6 @@ export const TopAboutContainer = styled.div`
     width: 80%;
     border-radius: 5px;
     margin: auto;
-    // border: 2px solid red;
     background-color: rgba(0, 0, 0, 0.5);
     
     @media screen and (max-width: 900px) {
@@ -42,7 +41,6 @@ export const TopAboutContainer = styled.div`
 export const TopAboutElementContainer = styled.div`
     position: relative;
     width: 100%;
-    // border: 2px solid white;
     text-align: center;
     padding: 40px;
     display: flex;
@@ -67,8 +65,6 @@ export const AboutImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    // padding: 30px;
-    // width: 80%;
     height: 50vw;
     position: relative;
     margin: auto;
