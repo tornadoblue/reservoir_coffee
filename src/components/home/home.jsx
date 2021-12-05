@@ -296,9 +296,4 @@ const backgroundImage = {
     backgroundBlendMode: "multiply",
 }
 
-const tableHeaderStyles = {
-    color: "#2dccd3",
-    fontSize: "2.5rem"
-}
-
 export default Home;
