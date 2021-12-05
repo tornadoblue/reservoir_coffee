@@ -321,7 +321,7 @@ export const LocationHeader = styled.div`
         margin: auto;
         height: 100%;
         width: 95%;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 `
 
@@ -353,7 +353,7 @@ export const LocationSlogan = styled.div`
     padding-bottom: 20px;
     font-size: 2rem;
     
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1250px) {
         font-size: 1.2rem;
     }
     @media screen and (max-width: 900px) {
