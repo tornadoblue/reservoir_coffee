@@ -2,7 +2,7 @@
   "name": "reservoir_coffee",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://awfulvizz.github.io/reservoir_coffee/",
+  "homepage": ".",
   "dependencies": {
     "-": "0.0.1",
     "@material-ui/core": "^4.12.3",
@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "env-cmd": "^10.1.0",
     "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
@@ -26,9 +27,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy:test": "env-cmd -f .env.test.local npm run build",
+    "build:test": "env-cmd -f .env.test.local npm run build",
+    "deploy:test": "gh-pages -d build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "deploy": "./deploy.sh",
+    "build": "react-scripts build",    
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
