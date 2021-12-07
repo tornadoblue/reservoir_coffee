@@ -15,11 +15,22 @@ import {
     TopLocationContainer
 } from "./locationStyles";
 
+import {api} from "../../api"
+
 function Location(props) {
+    
+    const [businessInfo, setBusinessInfo] = React.useState()
     const [openClosed, setOpenClosed] = React.useState("closed");
+
 
     React.useEffect(() => {
         refreshTime();
+
+        !businessInfo && (async () => {
+            const data = await api.businessInfo()
+            setBusinessInfo(data)            
+        })()
+
     })
 
     const refreshTime = () => {
@@ -59,7 +70,7 @@ function Location(props) {
                         Directly across the street from TRU, overlooking the beautiful Kamloops landscape
                         is Reservoir Coffee. We can't wait to serve you the best coffee in Kamloops.
                         Come study, enjoy your lunch break, or just catch up with an old friend with us
-                        here at Reservoir Coffee.
+                        here at Reservoir Coffee. 
                     </LocationInformation>
                 </TopLocationContainer>
                 <LocationContainer>
