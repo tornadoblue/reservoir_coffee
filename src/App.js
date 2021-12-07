@@ -10,7 +10,7 @@ import Location from './components/location/location';
 import About from './components/about/about';
 import Sidebar from './components/sidebar/sidebar';
 import {useState} from 'react';
-import ScrollToTop from "./helperFucntions/scrollToTop";
+import ScrollToTop from "./helperFunctions/scrollToTop";
 import Footer from "./components/footer/footer";
 
 export const BASE_URL = process.env.REACT_APP_BASE_URL || "/reservoir_coffee"

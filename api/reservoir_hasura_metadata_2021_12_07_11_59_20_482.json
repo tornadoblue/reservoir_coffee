@@ -1,0 +1,118 @@
+{
+  "resource_version": 15,
+  "metadata": {
+    "version": 3,
+    "sources": [
+      {
+        "name": "postgres",
+        "kind": "postgres",
+        "tables": [
+          {
+            "table": {
+              "schema": "public",
+              "name": "business_closures"
+            },
+            "select_permissions": [
+              {
+                "role": "guest",
+                "permission": {
+                  "columns": [
+                    "id",
+                    "description",
+                    "start_date",
+                    "end_date"
+                  ],
+                  "filter": {}
+                }
+              }
+            ]
+          },
+          {
+            "table": {
+              "schema": "public",
+              "name": "business_hours"
+            },
+            "select_permissions": [
+              {
+                "role": "guest",
+                "permission": {
+                  "columns": [
+                    "id",
+                    "day",
+                    "start",
+                    "end"
+                  ],
+                  "filter": {}
+                }
+              }
+            ]
+          },
+          {
+            "table": {
+              "schema": "public",
+              "name": "gallery"
+            },
+            "select_permissions": [
+              {
+                "role": "guest",
+                "permission": {
+                  "columns": [
+                    "id",
+                    "src",
+                    "width",
+                    "height",
+                    "order"
+                  ],
+                  "filter": {}
+                }
+              }
+            ]
+          }
+        ],
+        "configuration": {
+          "connection_info": {
+            "use_prepared_statements": false,
+            "database_url": {
+              "from_env": "HASURA_GRAPHQL_METADATA_DATABASE_URL"
+            },
+            "isolation_level": "read-committed"
+          }
+        }
+      }
+    ],
+    "query_collections": [
+      {
+        "name": "allowed-queries",
+        "definition": {
+          "queries": [
+            {
+              "name": "Business Hours and Closure Days",
+              "query": "query business_info {\n  business_hours {\n    id\n    day\n    start\n    end\n  }\n  business_closures {\n    id\n    description\n    start_date\n    end_date    \n  }\n}"
+            }
+          ]
+        }
+      }
+    ],
+    "allowlist": [
+      {
+        "collection": "allowed-queries"
+      }
+    ],
+    "rest_endpoints": [
+      {
+        "definition": {
+          "query": {
+            "collection_name": "allowed-queries",
+            "query_name": "Business Hours and Closure Days"
+          }
+        },
+        "url": "business_info",
+        "methods": [
+          "GET"
+        ],
+        "name": "Business Hours and Closure Days",
+        "comment": "Provides hours of business and closure dates"
+      }
+    ]
+  }
+}
