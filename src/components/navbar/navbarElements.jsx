@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 5px 0;
   top: 0;
   z-index: 10;
   
@@ -59,7 +59,7 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
+  margin-right: 10%;
   
   @media screen and (max-width: 768px) {
     display: none;
@@ -67,11 +67,13 @@ export const NavMenu = styled.div`
 `;
 
 export const LogoLink = styled(Link)`
-    display: flex;
-    align-items: center;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 0;
     height: 100%;
     cursor: pointer;
+    margin-left: 10%;
+    
+    @media screen and (max-width: 768px) {
+        margin-left: 5%;
+    }
 `
