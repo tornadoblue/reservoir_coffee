@@ -13,7 +13,12 @@ import {useState} from 'react';
 import ScrollToTop from "./helperFucntions/scrollToTop";
 import Footer from "./components/footer/footer";
 
+export const BASE_URL = process.env.REACT_APP_BASE_URL || "/reservoir_coffee"
+
+console.log({BASE_URL})
+
 function App() {
+
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -21,7 +26,7 @@ function App() {
     }
 
     return (
-        <BrowserRouter basename={"/reservoir_coffee"}>
+        <BrowserRouter basename={BASE_URL}>
             <ThemeProvider>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <Navbar toggle={toggle}/>
