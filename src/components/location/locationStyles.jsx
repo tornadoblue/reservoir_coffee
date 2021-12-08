@@ -69,6 +69,24 @@ export const OpenOrClosed = styled.div`
     }
 `
 
+export const BusinessClosures = styled.div`
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 1rem;    
+    color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    @media screen and (max-width: 900px) {
+        position: relative;
+    }
+`
+
+
 export const LocationInformation = styled.div`
     color: #fff;
     width: 80%;
