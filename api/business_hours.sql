@@ -1,9 +1,10 @@
 CREATE TABLE public.business_hours (
     id integer NOT NULL,
     day text NOT NULL,
-    start time without time zone,
-    "end" time without time zone
+    start time with time zone,
+    "end" time with time zone
 );
+
 
 
 ALTER TABLE public.business_hours OWNER TO postgres;
@@ -50,9 +51,9 @@ ALTER TABLE ONLY public.business_hours
 --
 
 INSERT INTO public.business_hours VALUES (1, 'Sunday', NULL, NULL);
-INSERT INTO public.business_hours VALUES (2, 'Monday', '08:00:00', '16:00:00');
-INSERT INTO public.business_hours VALUES (3, 'Tuesday', '08:00:00', '16:00:00');
-INSERT INTO public.business_hours VALUES (6, 'Friday', '08:00:00', '16:00:00');
-INSERT INTO public.business_hours VALUES (5, 'Thursday', '08:00:00', '16:00:00');
-INSERT INTO public.business_hours VALUES (4, 'Wednesday', '08:00:00', '16:00:00');
-INSERT INTO public.business_hours VALUES (7, 'Saturday', '09:00:00', '16:00:00');
+INSERT INTO public.business_hours VALUES (2, 'Monday', '08:00:00-08', '16:00:00-08');
+INSERT INTO public.business_hours VALUES (3, 'Tuesday', '08:00:00-08', '16:00:00-08');
+INSERT INTO public.business_hours VALUES (6, 'Friday', '08:00:00-08', '16:00:00-08');
+INSERT INTO public.business_hours VALUES (5, 'Thursday', '08:00:00-08', '16:00:00-08');
+INSERT INTO public.business_hours VALUES (4, 'Wednesday', '08:00:00-08', '16:00:00-08');
+INSERT INTO public.business_hours VALUES (7, 'Saturday', '09:00:00-08', '16:00:00-08');

@@ -12,15 +12,20 @@ import {
     LocationHeaderContainer,
     LocationInformation,
     OpenOrClosed,
-    TopLocationContainer
+    TopLocationContainer,
+    BusinessClosures,
 } from "./locationStyles";
+
+import {formatDate} from "../../helperFunctions/format"
+
 
 import {api} from "../../api"
 
 function Location(props) {
     
     const [businessInfo, setBusinessInfo] = React.useState()
-    const [openClosed, setOpenClosed] = React.useState("closed");
+    const [openClosed, setOpenClosed] = React.useState("");
+    const [closedReason, setClosedReason] = React.useState("");
 
 
     React.useEffect(() => {
@@ -38,25 +43,35 @@ function Location(props) {
     }
 
     const isOpen = () => {
-        let date = new Date()
-        let day = date.getDay()
-        let hour = date.getHours()
 
-        if (day === 0) {
-            setOpenClosed("closed")
-        } else if (day === 6) {
-            if (hour >= 8 && hour <= 15) {
-                setOpenClosed("open")
-            } else {
-                setOpenClosed("closed")
-            }
-        } else {
-            if (hour >= 7 && hour <= 15) {
-                setOpenClosed("open")
-            } else {
-                setOpenClosed("closed")
-            }
+        let info = businessInfo?.business_status.shift() // get first item of business_status
+        
+        if (info) {
+            setOpenClosed(info.status || "closed")
+            setClosedReason(info.closed_reason)           
         }
+    }
+    
+    const DateFormat = (props) => {
+        return <span style={{whiteSpace:'nowrap'}}>{formatDate(props.from)}
+            { props.to && ` to ${formatDate(props.to)}`}
+        </span>
+    }
+
+    const AdditionalClosures = (props) => {
+
+        const dateValue = (timestamp) => Date.parse(timestamp)
+        
+        const upcoming_items = props.items?.filter(x => Date.now() < dateValue(x.end_date || x.start_date))
+        
+        console.log({upcoming_items})
+        
+        return <span style={{fontSize:'0.5em'}}>
+                    Please note, we will be closed: <br/> {                     
+                    upcoming_items?.map(item => <>{item.description}:&nbsp;&nbsp;<DateFormat from={item.start_date} to={item.end_date} /><br/></>) }                                        
+                </span>
+
+
     }
 
     return (
@@ -120,11 +135,16 @@ function Location(props) {
                                 <td>9:00 AM - 4:00 PM</td>
                             </tr>
                         </HoursTable>
-                        <OpenOrClosed>
+                        { openClosed && <OpenOrClosed>
                             We are <span style={{color: openClosed === "open" ? "#a1ff0a" : "#ff0000"}}>{openClosed}</span> now
-                        </OpenOrClosed>
+                            { closedReason && <div style={{fontSize:'0.5em'}}>( {closedReason} )</div> }
+                        </OpenOrClosed> }
+                        
                     </RightLocationContainer>
                 </LocationContainer>
+                { businessInfo?.business_closures && <BusinessClosures>
+                    <AdditionalClosures items={businessInfo?.business_closures} />
+                </BusinessClosures> }
             </LocationWrapper>
         </>
     );
