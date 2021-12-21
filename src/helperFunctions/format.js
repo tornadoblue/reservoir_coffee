@@ -1,11 +1,17 @@
 
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 export const formatDate = (timestamp) => {
-
-    const date = new Date(timestamp);
     
-    const formattedDate = date.toLocaleDateString('en-GB', {
-    day: 'numeric', month: 'long'
-    }).replace(/ /g, ' ');
-
-    return formattedDate
+    const [year, month, day] = timestamp.split("-")
+    
+    try {
+        return `${parseInt(day)} ${months[parseInt(month)-1]}`
+    }
+    catch (error) {
+        // return original format if it can't be parsed
+        console.log(`formatDate Error: ${error}`)
+        return timestamp
+    }
+    
 }
